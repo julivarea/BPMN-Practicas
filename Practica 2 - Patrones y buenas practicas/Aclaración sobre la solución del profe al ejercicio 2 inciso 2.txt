@@ -1,0 +1,5 @@
+En la solución original al ejercicio 2, inciso 2 (Venta de Producto Online), el profe usa una compuerta paralela para avanzar con dos ramas: recibir quejas, y preparar el producto. El problema es que si el producto se prepara y entrega sin ninguna demora ni problema, queda abierta la rama de recibir quejas sin poder terminar.
+
+En la otra imagen de ese ejercicio, intenta solucionarlo abriendo dos ramas: en la rama de preparar el producto y entregarlo, cuando se entrega recibe el pago y al mismo tiempo envía una señal de 'producto entregado'. En la rama de recibir quejas, se abre una compuerta basada en eventos que avanza o con recibir la queja, o con recibir la señal de 'producto entregado', que avanza al cierre de esa rama, solucionando el problema de que la rama quedaba abierta.
+
+Mi solución solo recibe la queja con un Boundary Non-interrupting Catch Event, que recibe el mensaje, y sin interrumpir el flujo principal del proceso, avanza simultáneamente a una tarea "Priorizar pedido atrasado". Queda sin definir qué ocurre realmente al priorizarse un pedido retrasado.

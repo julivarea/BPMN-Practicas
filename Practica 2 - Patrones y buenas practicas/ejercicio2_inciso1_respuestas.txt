@@ -1,0 +1,13 @@
+RESPUESTAS AL EJERCICIO 2) INCISO 1) ESCRITAS POR EL PROFE EN EL CHAT EN LA CLASE VIRTUAL
+
+"
+1. Incompleta la compuerta Exclusiva del Pago. 
+2. el modelo tiene dos inicios, en delivery no es necesario 
+3 . "Recibir Pago" esta mal represntado como un service task . Correcto: mje catching 
+4. La comunicación entre Pagar Producto y Recibir Pago debería ser con línea punteada 
+5. la tarea "Priorizar pedido Retrasado" no hacemos nada luego 
+6. "Entregar Producto" a "Recibido" deberia ser linea punteada tambien 
+7. El evento intermedio del Local debe ser un evento start; 8. Y debe ser de recepción de Mje. 
+
+Cuando corrijan tener en cuenta: usan eventos que mandan mensajes o actividades, no conviene usar las dos en un mismo modelo. Simplificar las actividades de iniciales del cliente 
+"
